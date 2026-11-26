@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Abdulrahman Zaghloul | Backend and data engineer</title>
-    <meta name="description" content="Abdulrahman Zaghloul builds backend services and data pipelines where the numbers have to be right. Python, FastAPI, PostgreSQL, PySpark, dbt, Airflow and GIS.">
-    <meta property="og:title" content="Abdulrahman Zaghloul | Backend and data engineer">
-    <meta property="og:description" content="Backend services and data pipelines where the numbers have to be right.">
+    <title>Abdulrahman Zaghloul | Software engineer</title>
+    <meta name="description" content="Abdulrahman Zaghloul is a software engineer who builds services and data pipelines where the numbers have to be right: Python, FastAPI, PostgreSQL, Next.js, PySpark, dbt, Airflow and GIS.">
+    <meta property="og:title" content="Abdulrahman Zaghloul | Software engineer">
+    <meta property="og:description" content="Software engineer. Services and data pipelines where the numbers have to be right.">
     <meta property="og:url" content="https://abdulrahman-zaghloul.github.io/">
     <meta property="og:type" content="website">
     <meta name="color-scheme" content="light dark">
@@ -24,6 +24,7 @@
       <nav aria-label="Sections">
         <ul class="nav-list">
           <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -33,10 +34,11 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-name">
         <h1 id="hero-name">Abdulrahman Zaghloul</h1>
-        <p class="hero-statement">Backend and data engineer. I build services and pipelines where the numbers have to be right.</p>
-        <p class="hero-detail">Payments that can't be spent twice. Pipelines that fail loudly when the data is wrong. A drawing checker that measures every printed slope against the linework. I'm based in Tampa and open to software, backend and data engineering roles, remote or anywhere in the US.</p>
+        <p class="hero-statement">Software engineer. I build services and pipelines where the numbers have to be right.</p>
+        <p class="hero-detail">Payments that can't be spent twice. Pipelines that fail loudly when the data is wrong. A drawing checker that measures every printed slope against the linework, which I founded, built and run in production. I'm based in Tampa and open to software, backend and data engineering roles, remote or anywhere in the US.</p>
         <p class="hero-actions">
           <a class="action action-primary" href="mailto:abdulrahmansamy2@gmail.com">Email me</a>
+          <a class="action" href="Abdulrahman_Zaghloul_Resume.pdf">Download resume (PDF)</a>
           <a class="action" href="https://github.com/Abdulrahman-Zaghloul">GitHub</a>
           <a class="action" href="https://www.linkedin.com/in/Abdul-Zaghloul">LinkedIn</a>
         </p>
@@ -98,23 +100,23 @@
         <article class="project" id="civilneer" aria-labelledby="civilneer-title">
           <header class="project-head">
             <h3 id="civilneer-title">Civilneer</h3>
-            <p class="project-summary">Automated quality control for roadway engineering drawings. A production SaaS in private beta.</p>
+            <p class="project-summary">Automated quality control for roadway engineering drawings. I founded it, built it end to end, and run it for a private beta of 5&ndash;10 civil engineers.</p>
           </header>
           <div class="project-body">
             <div class="project-story">
               <p>On a roadway plan set, every cross section carries printed slopes, elevations and offsets that are supposed to describe the geometry drawn beside them. Often they don't, because the drawing changed and the callout didn't. Checking them by hand falls to the most expensive engineer in the office.</p>
-              <p>Civilneer takes the vector PDF, rebuilds the cross-section geometry, reads every callout, and returns the same sheet marked up: yellow where the value matches, red where it doesn't, with the measured value, the printed value and the difference on hover. A review that takes an engineer 5&ndash;10 minutes per sheet runs in under 5 seconds.</p>
+              <p>Civilneer takes the vector PDF, rebuilds the cross-section geometry, reads every callout, and returns the same sheet marked up: yellow where the value matches, red where it doesn't, with the measured value, the printed value and the difference on hover. A review that takes an engineer 5&ndash;10 minutes per sheet runs in under 5 seconds, and the beta has put more than 180 drawing sheets through it.</p>
             </div>
             <div class="project-detail">
               <h4>The hard part</h4>
               <ul>
                 <li>No OCR and no rasterizing: PyMuPDF reads vector paths and text spans straight from the PDF content stream.</li>
                 <li>Each callout is matched to the linework it describes by its position on the sheet, then measured with Shapely and NumPy.</li>
-                <li>Nothing is hidden behind a score. The engineer sees exactly what was measured and makes the call.</li>
+                <li>Nothing is hidden behind a score. The engineer sees exactly what was measured and makes the call; the published demo run shows 86 geometric checks across 9 cross sections.</li>
               </ul>
             </div>
           </div>
-          <p class="project-stack">Built with Python, FastAPI, PostgreSQL, Next.js, PyMuPDF, Shapely, NumPy and Docker.</p>
+          <p class="project-stack">Built with Python, FastAPI, PostgreSQL, OAuth 2.0, React, Next.js, PyMuPDF, Shapely and NumPy, deployed with Docker Compose and automated CI/CD.</p>
           <p class="project-links"><a href="https://civilneer.com">civilneer.com</a> <a href="https://github.com/Abdulrahman-Zaghloul/civilneer">Architecture write-up</a></p>
         </article>
 
@@ -203,7 +205,7 @@ CRITICAL  ssh-success-after-failures
             </tr>
             <tr>
               <td><a href="https://github.com/Abdulrahman-Zaghloul/logistics-network-optimization">Logistics network optimization</a></td>
-              <td>Delivery territories and driving routes for 5 drivers and about 300 daily stops in Tampa, using OpenStreetMap road data, OSMnx, NetworkX and scikit-learn.</td>
+              <td>300 Tampa delivery locations balanced into five driver territories with K-Means clustering, then Dijkstra shortest-path routes over an OpenStreetMap road network, using GeoPandas, OSMnx and NetworkX.</td>
             </tr>
             <tr>
               <td><a href="https://github.com/Abdulrahman-Zaghloul/spatial-etl-pipeline">Spatial ETL pipeline</a></td>
@@ -217,20 +219,61 @@ CRITICAL  ssh-success-after-failures
         </table>
       </section>
 
+      <section class="experience" id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <ol class="experience-list">
+          <li>
+            <p class="exp-when">January 2026 &ndash; present</p>
+            <div>
+              <h3 class="exp-role">Founder and software engineer, Civilneer</h3>
+              <p class="exp-where">Tampa, FL</p>
+              <p>Designed, built and operate a production SaaS that checks civil engineering drawings: a FastAPI REST API with PostgreSQL, OAuth 2.0 and asynchronous jobs, a React and Next.js interface, and a Shapely and NumPy geometry engine, deployed on Linux with Docker Compose and automated CI/CD.</p>
+            </div>
+          </li>
+          <li>
+            <p class="exp-when">2024 &ndash; 2025</p>
+            <div>
+              <h3 class="exp-role">Technical service advisor, GAA Auto Service</h3>
+              <p class="exp-where">Largo, FL</p>
+              <p>Diagnosed technical faults with diagnostic software, interpreting system logs, error codes and performance data, and documented the root cause and resolution of every case.</p>
+            </div>
+          </li>
+          <li>
+            <p class="exp-when">2020 &ndash; 2022</p>
+            <div>
+              <h3 class="exp-role">Customer service representative, Vodafone UK</h3>
+              <p class="exp-where">Alexandria, Egypt</p>
+              <p>Resolved 40&ndash;60 technical support contacts a day, documenting requirements, escalations and follow-ups.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
       <section class="about" id="about" aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
         <div class="about-grid">
           <div class="about-text">
-            <p>I'm a Computer Engineering graduate with an M.S. in Computer Science &amp; Engineering, living in Tampa, Florida. My background spans software, databases and spatial data, so I'm at home designing an API's failure modes, modeling a warehouse, or routing deliveries over a road network.</p>
+            <p>I'm a software engineer in Tampa, Florida, with additional depth in data engineering and geospatial data. My background spans software, databases and spatial data, so I'm at home designing an API's failure modes, modeling a warehouse, or routing deliveries over a road network.</p>
             <p>What I care about most is the part that usually gets skipped: tests that catch the wrong number, constraints the database enforces, and systems that behave the same way on the hundredth run as on the first.</p>
+            <h3 class="about-subhead">Education</h3>
+            <ul class="education">
+              <li><strong>M.S., Computer Science &amp; Engineering</strong>, American National University, 2026</li>
+              <li><strong>B.S., Computer Engineering</strong>, Arab Academy for Science and Technology, 2023 (ABET-accredited)</li>
+            </ul>
+            <h3 class="about-subhead">Certifications</h3>
+            <ul class="education">
+              <li>Google Cybersecurity Professional Certificate</li>
+              <li>UC Davis GIS Specialization</li>
+              <li>Esri GIS Training</li>
+            </ul>
           </div>
           <dl class="skills">
-            <div><dt>Languages</dt><dd>Python, SQL, Java, JavaScript, C</dd></div>
-            <div><dt>Backend</dt><dd>FastAPI, SQLAlchemy, Alembic, Pydantic, PostgreSQL, Docker</dd></div>
-            <div><dt>Data</dt><dd>PySpark, dbt, Airflow, Parquet, ETL and ELT</dd></div>
-            <div><dt>GIS</dt><dd>PostGIS, GeoPandas, Shapely, OSMnx, NetworkX, ArcGIS Pro, QGIS</dd></div>
+            <div><dt>Languages</dt><dd>Python, SQL, JavaScript, Java, C, HTML and CSS</dd></div>
+            <div><dt>Backend and web</dt><dd>FastAPI, REST API design, OAuth 2.0, asynchronous processing, SQLAlchemy, PyMuPDF, pytest, React, Next.js</dd></div>
+            <div><dt>Data engineering</dt><dd>PySpark, dbt, Apache Airflow, ETL and ELT, data warehousing, dimensional modeling, pandas, NumPy</dd></div>
+            <div><dt>Cloud, DevOps and databases</dt><dd>AWS (S3, EC2, RDS, Lambda), Docker, CI/CD, GitHub Actions, Git, Linux, Bash, PostgreSQL, PostGIS, schema design, query optimization</dd></div>
+            <div><dt>Geospatial</dt><dd>ArcGIS Pro, ArcPy, QGIS, GeoPandas, Shapely, OSMnx, NetworkX, coordinate systems, map projections, geoprocessing</dd></div>
             <div><dt>Security</dt><dd>Wazuh, Sysmon, MITRE ATT&amp;CK</dd></div>
-            <div><dt>Practices</dt><dd>GitHub Actions CI, pytest, mypy, ruff, Linux</dd></div>
           </dl>
         </div>
       </section>

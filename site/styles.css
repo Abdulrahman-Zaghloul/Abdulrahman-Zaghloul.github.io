@@ -336,6 +336,7 @@ main > section {
 
 .work,
 .more,
+.experience,
 .about,
 .contact {
   padding-top: clamp(4rem, 9vw, 7rem);
@@ -459,7 +460,68 @@ main h2 {
   font-weight: 500;
 }
 
+/* Experience: a real chronology, so dates lead each row. */
+
+.experience-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience-list li {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--faint);
+}
+
+.exp-when {
+  margin: 0.2rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--line);
+}
+
+.exp-role {
+  font-size: 1.375rem;
+}
+
+.exp-where {
+  margin: 0.2rem 0 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--line);
+}
+
+.experience-list li p:last-child {
+  max-width: var(--measure);
+  margin-bottom: 0;
+}
+
 /* About */
+
+.about-subhead {
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+
+.education {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.education li + li {
+  margin-top: 0.4rem;
+}
+
+.education li::marker {
+  color: var(--line);
+}
 
 .about-grid {
   display: grid;
@@ -575,6 +637,11 @@ main h2 {
   .drawing svg {
     width: 185%;
     margin-left: -91%;
+  }
+
+  .experience-list li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
   }
 
   .project-body,
