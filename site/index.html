@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abdulrahman Zaghloul | Backend and data engineer</title>
+    <meta name="description" content="Abdulrahman Zaghloul builds backend services and data pipelines where the numbers have to be right. Python, FastAPI, PostgreSQL, PySpark, dbt, Airflow and GIS.">
+    <meta property="og:title" content="Abdulrahman Zaghloul | Backend and data engineer">
+    <meta property="og:description" content="Backend services and data pipelines where the numbers have to be right.">
+    <meta property="og:url" content="https://abdulrahman-zaghloul.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=Barlow+Semi+Condensed:wght@500;600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top">Abdulrahman Zaghloul</a>
+      <nav aria-label="Sections">
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-name">
+        <h1 id="hero-name">Abdulrahman Zaghloul</h1>
+        <p class="hero-statement">Backend and data engineer. I build services and pipelines where the numbers have to be right.</p>
+        <p class="hero-detail">Payments that can't be spent twice. Pipelines that fail loudly when the data is wrong. A drawing checker that measures every printed slope against the linework. I'm based in Tampa and open to software, backend and data engineering roles, remote or anywhere in the US.</p>
+        <p class="hero-actions">
+          <a class="action action-primary" href="mailto:abdulrahmanxzaghloul@gmail.com">Email me</a>
+          <a class="action" href="https://github.com/Abdulrahman-Zaghloul">GitHub</a>
+          <a class="action" href="https://www.linkedin.com/in/Abdul-Zaghloul">LinkedIn</a>
+        </p>
+
+        <figure class="drawing">
+          <div class="drawing-frame">
+            <svg viewBox="0 0 960 320" role="img" aria-labelledby="drawing-title drawing-desc">
+              <title id="drawing-title">A roadway cross-section with its callouts checked</title>
+              <desc id="drawing-desc">Two travel lanes slope 2.0 percent away from the crown at elevation 102.35, shoulders slope 4.0 percent, and foreslopes run at 1 to 4 into ditches. Every callout is highlighted yellow because it matches the drawn geometry, except the right shoulder, which is printed as 6.0 percent but drawn at 4.0 percent and is flagged red.</desc>
+
+              <polygon class="earth" points="10,130 88.5,137.7 156,250.2 192,250.2 300,115.2 372,100.8 480,90 588,100.8 660,115.2 768,250.2 804,250.2 871.5,137.7 950,132 950,310 10,310"/>
+              <polygon class="pavement" points="300,115.2 372,100.8 480,90 588,100.8 660,115.2 660,125.2 588,110.8 480,100 372,110.8 300,125.2"/>
+              <polyline class="existing" points="10,130 88.5,137.7 871.5,137.7 950,132"/>
+              <polyline class="grade" points="10,130 88.5,137.7 156,250.2 192,250.2 300,115.2 372,100.8 480,90 588,100.8 660,115.2 768,250.2 804,250.2 871.5,137.7 950,132"/>
+              <line class="centerline" x1="480" y1="66" x2="480" y2="300"/>
+
+              <g class="callout d1">
+                <rect class="mark" x="176" y="157" width="44" height="20" rx="2"/>
+                <text x="214" y="172" text-anchor="end">1:4</text>
+              </g>
+              <g class="callout d2">
+                <rect class="mark" x="314" y="83" width="46" height="20" rx="2"/>
+                <text x="337" y="98" text-anchor="middle">4.0%</text>
+              </g>
+              <g class="callout d3">
+                <rect class="mark" x="403" y="67" width="46" height="20" rx="2"/>
+                <text x="426" y="82" text-anchor="middle">2.0%</text>
+              </g>
+              <g class="callout d4">
+                <line class="leader" x1="497" y1="44" x2="482" y2="87"/>
+                <rect class="mark" x="492" y="22" width="86" height="20" rx="2"/>
+                <text x="535" y="37" text-anchor="middle">EL 102.35</text>
+              </g>
+              <g class="callout d5">
+                <rect class="mark" x="511" y="67" width="46" height="20" rx="2"/>
+                <text x="534" y="82" text-anchor="middle">2.0%</text>
+              </g>
+              <g class="callout callout-flag d6">
+                <rect class="mark" x="601" y="83" width="46" height="20" rx="2"/>
+                <text x="624" y="98" text-anchor="middle">6.0%</text>
+                <line class="leader" x1="647" y1="88" x2="684" y2="62"/>
+                <text class="flag-note" x="688" y="58">Printed 6.0%, drawn 4.0%</text>
+              </g>
+              <g class="callout d7">
+                <rect class="mark" x="734" y="157" width="44" height="20" rx="2"/>
+                <text x="740" y="172">1:4</text>
+              </g>
+
+              <line class="scan" x1="0" y1="10" x2="0" y2="310"/>
+            </svg>
+          </div>
+          <figcaption>A roadway cross-section like the ones <a href="#civilneer">Civilneer</a> checks. Yellow callouts match the drawn geometry; red ones disagree and go to the engineer for review. Vertical scale exaggerated 5&times;.</figcaption>
+        </figure>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-heading">
+        <h2 id="work-heading">Selected work</h2>
+
+        <article class="project" id="civilneer" aria-labelledby="civilneer-title">
+          <header class="project-head">
+            <h3 id="civilneer-title">Civilneer</h3>
+            <p class="project-summary">Automated quality control for roadway engineering drawings. A production SaaS in private beta.</p>
+          </header>
+          <div class="project-body">
+            <div class="project-story">
+              <p>On a roadway plan set, every cross section carries printed slopes, elevations and offsets that are supposed to describe the geometry drawn beside them. Often they don't, because the drawing changed and the callout didn't. Checking them by hand falls to the most expensive engineer in the office.</p>
+              <p>Civilneer takes the vector PDF, rebuilds the cross-section geometry, reads every callout, and returns the same sheet marked up: yellow where the value matches, red where it doesn't, with the measured value, the printed value and the difference on hover. A review that takes an engineer 5&ndash;10 minutes per sheet runs in under 5 seconds.</p>
+            </div>
+            <div class="project-detail">
+              <h4>The hard part</h4>
+              <ul>
+                <li>No OCR and no rasterizing: PyMuPDF reads vector paths and text spans straight from the PDF content stream.</li>
+                <li>Each callout is matched to the linework it describes by its position on the sheet, then measured with Shapely and NumPy.</li>
+                <li>Nothing is hidden behind a score. The engineer sees exactly what was measured and makes the call.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="project-stack">Built with Python, FastAPI, PostgreSQL, Next.js, PyMuPDF, Shapely, NumPy and Docker.</p>
+          <p class="project-links"><a href="https://civilneer.com">civilneer.com</a> <a href="https://github.com/Abdulrahman-Zaghloul/civilneer">Architecture write-up</a></p>
+        </article>
+
+        <article class="project" id="ledgerline" aria-labelledby="ledgerline-title">
+          <header class="project-head">
+            <h3 id="ledgerline-title">Ledgerline</h3>
+            <p class="project-summary">A double-entry wallet and payments ledger API. The interesting part isn't the CRUD; it's the guarantees.</p>
+          </header>
+          <div class="project-body">
+            <div class="project-story">
+              <p>The kind of service that sits behind a peer-to-peer payments app: multi-currency wallets, deposits, withdrawals and transfers between users. It is built so money is never created, lost or spent twice, even under concurrent requests, client retries and crashes.</p>
+            </div>
+            <div class="project-detail">
+              <h4>How it holds</h4>
+              <ul>
+                <li>Every transaction's postings sum to zero, verified by a deferred constraint trigger when it commits.</li>
+                <li>A retried request can't charge twice: the idempotency key, the money movement and the response commit in one transaction.</li>
+                <li>Row locks are taken in one global order, so concurrent transfers can't deadlock. Parallel tests fail if the lock is removed.</li>
+                <li>Events go through a transactional outbox to HMAC-signed webhooks, with backoff and dead-lettering.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="project-stack">Built with FastAPI, PostgreSQL 16, SQLAlchemy, Alembic and Docker. Strict mypy and CI on every push.</p>
+          <p class="project-links"><a href="https://github.com/Abdulrahman-Zaghloul/ledgerline">Code and design records</a></p>
+        </article>
+
+        <article class="project" id="lakehouse" aria-labelledby="lakehouse-title">
+          <header class="project-head">
+            <h3 id="lakehouse-title">Retail Data Lakehouse Pipeline</h3>
+            <p class="project-summary">Six retail source domains to tested, analytics-ready marts, reproducible from one command.</p>
+          </header>
+          <div class="project-body">
+            <div class="project-story">
+              <p>Raw data is extracted from an operational PostgreSQL database and landed as Parquet, cleaned and conformed with PySpark, loaded into a warehouse, and modeled with dbt into customer, product and date dimensions, an order fact table and daily sales marts. Airflow runs the whole thing.</p>
+            </div>
+            <div class="project-detail">
+              <h4>Why it can be trusted</h4>
+              <ul>
+                <li>37 dbt tests check keys, relationships, accepted values and source freshness on every build.</li>
+                <li>Python unit tests cover extraction and transformation on their own.</li>
+                <li>Both run in GitHub Actions, so a broken data contract fails the build instead of reaching an analyst.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="project-stack">Built with PySpark, dbt, Apache Airflow, PostgreSQL, Parquet, Docker and GitHub Actions.</p>
+          <p class="project-links"><a href="https://github.com/Abdulrahman-Zaghloul/retail-lakehouse-pipeline">Code and architecture</a></p>
+        </article>
+
+        <article class="project" id="vigil" aria-labelledby="vigil-title">
+          <header class="project-head">
+            <h3 id="vigil-title">Vigil</h3>
+            <p class="project-summary">A lightweight threat-detection engine, built in public one part at a time.</p>
+          </header>
+          <div class="project-body project-body-even">
+            <div class="project-story">
+              <p>Vigil reads security logs, spots attacks such as SSH brute force and password spraying, and raises alerts mapped to MITRE ATT&amp;CK. Every alert carries the exact log lines that triggered it. It runs as a command-line scanner, stores events in PostgreSQL, and exposes an ingestion and alerts API with scoped keys and rate limits.</p>
+            </div>
+            <div class="project-detail">
+              <h4>Scanning the bundled attack scenario</h4>
+              <pre class="terminal"><code>$ vigil scan tests/data/attack_scenario.log
+scanned 29 lines, 19 login attempts, 3 alerts
+
+MEDIUM    ssh-password-spray
+          10 different accounts tried within 10 min
+MEDIUM    ssh-brute-force
+          5 failed logins within 60s
+CRITICAL  ssh-success-after-failures
+          'root' logged in after 6 failed attempts</code></pre>
+            </div>
+          </div>
+          <p class="project-stack">Built with Python, FastAPI, PostgreSQL and SQLAlchemy, with CI on every push.</p>
+          <p class="project-links"><a href="https://github.com/Abdulrahman-Zaghloul/vigil">Code and roadmap</a></p>
+        </article>
+      </section>
+
+      <section class="more" aria-labelledby="more-heading">
+        <h2 id="more-heading">More projects</h2>
+        <table class="more-table">
+          <thead>
+            <tr><th scope="col">Project</th><th scope="col">What it shows</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://github.com/Abdulrahman-Zaghloul/soc-lab-wazuh">SOC lab with Wazuh</a></td>
+              <td>Wazuh and Sysmon deployed from scratch on an isolated network, a simulated SMB brute-force attack investigated end to end, and a written incident report.</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/Abdulrahman-Zaghloul/logistics-network-optimization">Logistics network optimization</a></td>
+              <td>Delivery territories and driving routes for 5 drivers and about 300 daily stops in Tampa, using OpenStreetMap road data, OSMnx, NetworkX and scikit-learn.</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/Abdulrahman-Zaghloul/spatial-etl-pipeline">Spatial ETL pipeline</a></td>
+              <td>Bronze, silver and gold layers from the OpenStreetMap Overpass API to an interactive density heatmap, built with GeoPandas.</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/Abdulrahman-Zaghloul/GIS-Portfolio">GIS portfolio</a></td>
+              <td>Flood relocation, habitat suitability and wildfire exposure analyses in ArcGIS Pro.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a Computer Engineering graduate with an M.S. in Computer Science &amp; Engineering, living in Tampa, Florida. My background spans software, databases and spatial data, so I'm at home designing an API's failure modes, modeling a warehouse, or routing deliveries over a road network.</p>
+            <p>What I care about most is the part that usually gets skipped: tests that catch the wrong number, constraints the database enforces, and systems that behave the same way on the hundredth run as on the first.</p>
+          </div>
+          <dl class="skills">
+            <div><dt>Languages</dt><dd>Python, SQL, Java, JavaScript, C</dd></div>
+            <div><dt>Backend</dt><dd>FastAPI, SQLAlchemy, Alembic, Pydantic, PostgreSQL, Docker</dd></div>
+            <div><dt>Data</dt><dd>PySpark, dbt, Airflow, Parquet, ETL and ELT</dd></div>
+            <div><dt>GIS</dt><dd>PostGIS, GeoPandas, Shapely, OSMnx, NetworkX, ArcGIS Pro, QGIS</dd></div>
+            <div><dt>Security</dt><dd>Wazuh, Sysmon, MITRE ATT&amp;CK</dd></div>
+            <div><dt>Practices</dt><dd>GitHub Actions CI, pytest, mypy, ruff, Linux</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p class="contact-lead">The fastest way to reach me is email.</p>
+        <p class="contact-email"><a href="mailto:abdulrahmanxzaghloul@gmail.com">abdulrahmanxzaghloul@gmail.com</a></p>
+        <p class="contact-other"><a href="https://www.linkedin.com/in/Abdul-Zaghloul">LinkedIn</a> <a href="https://github.com/Abdulrahman-Zaghloul">GitHub</a></p>
+      </section>
+    </main>
+
+    <footer class="title-block" aria-label="About this page">
+      <dl>
+        <div><dt>Drawn by</dt><dd>Abdulrahman Zaghloul</dd></div>
+        <div><dt>Checked</dt><dd>HTML validated on every change</dd></div>
+        <div><dt>Updated</dt><dd>November 2026</dd></div>
+        <div><dt>Sheet</dt><dd>1 of 1</dd></div>
+      </dl>
+    </footer>
+  </body>
+</html>
